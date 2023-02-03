@@ -1,0 +1,17 @@
+# This is a basic workflow to help you get started with Actions
+# Each workflow must have a name. Since we can have more than one
+name: First Workflow
+# Event(s)/trigger(s) for the workflow to kickoff
+on: workflow_dispatch # (workflow_dispatch)Manually trigger the workflow
+# The job(s) that must be done
+jobs:
+  # Job name
+  first-job:
+    # Runner(environment)
+    runs-on: ubuntu-latest
+    # Sequence of tasks to be done in this job
+    steps:
+      - name: Print greeting
+        run: echo "Hello World!"
+      - name: Pring goodbye
+        run: echo "Done - bye!"
